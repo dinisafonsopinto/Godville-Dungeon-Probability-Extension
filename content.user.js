@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Godville Dungeon Map Probability
 // @namespace    https://godvillegame.com/superhero
-// @version      v1.0.1
+// @version      v1.0.2
 // @description  Uses Monte Carlo to predict the probability of heroes stepping on a given empty space
 // @author       Denis O First
 // @match        https://godvillegame.com/superhero
@@ -325,6 +325,7 @@ function initializePathPredictor() {
 
         // Insert the wrapper below the original map
         originalMap.parentNode.insertBefore(wrapper, originalMap.nextSibling);
+        wupContent.style.height = "650px";
     });
 }
 
